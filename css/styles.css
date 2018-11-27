@@ -1,0 +1,2390 @@
+.clear:before, .clear:after {
+  content: ' ';
+  display: table; }
+
+.clear {
+  *zoom: 1; }
+  .clear:after {
+    clear: both; }
+
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+audio, canvas, progress, video {
+  display: inline-block;
+  vertical-align: baseline; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden], template {
+  display: none; }
+
+a {
+  background-color: transparent; }
+
+a:active, a:hover {
+  outline: 0; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b, strong {
+  font-weight: 700; }
+
+dfn {
+  font-style: italic; }
+
+h1 {
+  font-size: 2em;
+  margin: .67em 0; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+small {
+  font-size: 80%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -.5em; }
+
+sub {
+  bottom: -.25em; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+figure {
+  margin: 1em 40px; }
+
+hr {
+  box-sizing: content-box;
+  height: 0; }
+
+pre {
+  overflow: auto; }
+
+code, kbd, pre, samp {
+  font-family: monospace,monospace;
+  font-size: 1em; }
+
+button, input, optgroup, select, textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0; }
+
+button {
+  overflow: visible; }
+
+button, select {
+  text-transform: none; }
+
+button, html input[type=button], input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled], html input[disabled] {
+  cursor: default; }
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+input {
+  line-height: normal; }
+
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0; }
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+  height: auto; }
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box; }
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em; }
+
+legend {
+  border: 0;
+  padding: 0; }
+
+textarea {
+  overflow: auto; }
+
+optgroup {
+  font-weight: 700; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td, th {
+  padding: 0; }
+
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4; }
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+audio, canvas, iframe, img, svg, video {
+  vertical-align: middle; }
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+textarea {
+  resize: vertical; }
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+body {
+  font: 16px/1.5 'Roboto', Helvetica, Helvetica Neue, Arial, sans-serif;
+  background-color: #212121; }
+
+.wrapper {
+  width: 80%;
+  margin: 0 10%; }
+
+/* Make the body 100% of the browser viewport height */
+html, body {
+  height: 100%;
+  margin: 0; }
+
+h1 {
+  font-size: 2em;
+  margin-top: 0;
+  margin-bottom: .23em;
+  font-family: 'Raleway', Helvetica, Helvetica Neue, Arial, sans-serif;
+  font-weight: 700; }
+
+.wrapper span.size {
+  display: none; }
+
+@media only screen and (max-width: 414px) {
+  h1, h2 {
+    font-size: .9em; }
+  .home-control {
+    display: none; }
+  .slide .wrapper h2 {
+    margin-bottom: 2px; }
+  .slide .wrapper span.size {
+    display: inline; }
+  .slide .wrapper section p {
+    display: none; }
+  #slide36 .wrapper header h1 {
+    margin-bottom: 24px; } }
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* =Preloader */
+#preloader {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 101;
+  background-color: #212121;
+  color: #ffffff; }
+  #preloader .txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+  #preloader .txt-perc {
+    font-size: 35px;
+    font-family: 'Roboto Condensed', Helvetica, Helvetica Neue, Arial, sans-serif;
+    opacity: 1;
+    margin: 0 0 6px 0;
+    max-width: 400px;
+    text-align: center; }
+  #preloader .progress {
+    width: 100px;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 auto 15px auto; }
+    #preloader .progress span {
+      display: block;
+      width: 0;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.8); }
+  #preloader.is-hidden {
+    visibility: hidden;
+    opacity: 0; }
+
+.is-loading {
+  overflow: hidden; }
+
+/* =Header */
+.header-container {
+  text-align: center;
+  color: #ffffff; }
+  .header-container .wrapper {
+    padding-top: 120px;
+    z-index: 2;
+    position: relative; }
+  .header-container .bcg {
+    -webkit-transition: -webkit-transform 4s ease-out;
+            transition: transform 4s ease-out;
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    -webkit-transform-origin: top center;
+            transform-origin: top center; }
+  .header-container.is-loaded .bcg {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+
+.bcg {
+  background: no-repeat center center;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.5; }
+  .header-container .bcg {
+    background-image: url(../img/ts_main.jpg);
+    background-size: cover; }
+  #slide1 .bcg {
+    background: url(../img/ts_1.jpg) no-repeat center center;
+    background-size: cover; }
+  #slide2 .bcg {
+    background: url(../img/ts_2.jpg) no-repeat center center;
+    background-size: cover; }
+  #slide3 .bcg {
+    background: url(../img/ts_3.jpg) no-repeat center center;
+    background-size: cover; }
+  #slide4 .bcg {
+    background: url(../img/ts_4.jpg) no-repeat center center;
+    background-size: cover; }
+  #slide5 .bcg {
+    background: url(../img/ts_5.jpg) no-repeat center center;
+    background-size: cover; }
+  #slide6 .bcg {
+    background: url(../img/ts_6.jpg) no-repeat center center;
+    background-size: cover; }
+  #slide7 .bcg {
+    background: url(../img/ts_7.jpg) no-repeat center center;
+    background-size: cover; }
+  #slide8 .bcg {
+    background: url(../img/ts_8.jpg) no-repeat center center;
+    background-size: cover; }
+  #slide9 .bcg {
+    background: url(../img/ts_9.jpg) no-repeat center center;
+    background-size: cover; }
+  #slide10 .bcg {
+    background: url(../img/ts_10.jpg) no-repeat center center;
+    background-size: cover; }
+  #slide11 .bcg {
+    background: url(../img/ts_11.jpg) no-repeat center center;
+    background-size: cover; }
+  #slide12 .bcg {
+    background: url(../img/ts_12.jpg) no-repeat center center;
+    background-size: cover; }
+  #slide13 .bcg {
+    background: url(../img/ts_13.jpg) no-repeat center center;
+    background-size: cover; }
+  #slide14 .bcg {
+    background: url(../img/ts_14.jpg) no-repeat center center;
+    background-size: cover; }
+  #slide15 .bcg {
+    background: url(../img/ts_15.jpg) no-repeat center center;
+    background-size: cover; }
+  #slide16 .bcg {
+    background: url(../img/ts_16.jpg) no-repeat center center;
+    background-size: cover; }
+  #slide17 .bcg {
+    background: url(../img/ts_17.jpg) no-repeat center center;
+    background-size: cover; }
+  #slide18 .bcg {
+    background: url(../img/ts_18.jpg) no-repeat center center;
+    background-size: cover; }
+  #slide19 .bcg {
+    background: url(../img/ts_19.jpg) no-repeat center center;
+    background-size: cover; }
+  #slide20 .bcg {
+    background: url(../img/ts_20.jpg) no-repeat center center;
+    background-size: cover; }
+  #slide21 .bcg {
+    background: url(../img/ts_21.jpg) no-repeat center center;
+    background-size: cover; }
+  #slide22 .bcg {
+    background: url(../img/ts_22.jpg) no-repeat center center;
+    background-size: cover; }
+  #slide23 .bcg {
+    background: url(../img/ts_23.jpg) no-repeat center center;
+    background-size: cover; }
+  #slide24 .bcg {
+    background: url(../img/ts_24.jpg) no-repeat center center;
+    background-size: cover; }
+  #slide25 .bcg {
+    background: url(../img/ts_25.jpg) no-repeat center center;
+    background-size: cover; }
+  #slide26 .bcg {
+    background: url(../img/ts_26.jpg) no-repeat center center;
+    background-size: cover; }
+  #slide27 .bcg {
+    background: url(../img/ts_27.jpg) no-repeat center center;
+    background-size: cover; }
+  #slide28 .bcg {
+    background: url(../img/ts_28.jpg) no-repeat center center;
+    background-size: cover; }
+  #slide29 .bcg {
+    background: url(../img/ts_29.jpg) no-repeat center center;
+    background-size: cover; }
+  #slide30 .bcg {
+    background: url(../img/ts_30.jpg) no-repeat center center;
+    background-size: cover; }
+  #slide31 .bcg {
+    background: url(../img/ts_31.jpg) no-repeat center center;
+    background-size: cover; }
+  #slide32 .bcg {
+    background: url(../img/ts_32.jpg) no-repeat center center;
+    background-size: cover; }
+  #slide33 .bcg {
+    background: url(../img/ts_33.jpg) no-repeat center center;
+    background-size: cover; }
+  #slide34 .bcg {
+    background: url(../img/ts_34.jpg) no-repeat center center;
+    background-size: cover; }
+  #slide35 .bcg {
+    background: url(../img/ts_35.jpg) no-repeat center center;
+    background-size: cover; }
+  #slide36 .bcg {
+    background: url(../img/ts_36.jpg) no-repeat center center;
+    background-size: cover; }
+  #slide36 .bcg {
+    background: url(../img/ts_36.jpg) no-repeat center center;
+    background-size: cover;
+    opacity: 0.7; }
+
+/* =Navigation */
+nav {
+  display: none;
+  position: fixed;
+  right: 30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  text-align: right;
+  z-index: 100; }
+  nav a {
+    display: block;
+    line-height: 25px;
+    position: relative;
+    padding-right: 20px;
+    color: #ffffff;
+    text-decoration: none; }
+    nav a:hover .nav-label {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+      visibility: visible; }
+  nav .nav-dot {
+    display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 100%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    -webkit-transition: all 0.3s linear;
+            transition: all 0.3s linear; }
+  nav .nav-label {
+    display: block;
+    opacity: 0.5;
+    visibility: hidden;
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+    -webkit-transition: all 0.2s cubic-bezier(.17, .67, .83, .67);
+            transition: all 0.2s cubic-bezier(.17, .67, .83, .67); }
+  nav.is-dark a {
+    color: #212121; }
+  nav.is-dark .nav-dot {
+    background-color: rgba(0, 0, 0, 0.5); }
+  nav.is-light a {
+    color: #ffffff; }
+  nav.is-light .nav-dot {
+    background-color: rgba(255, 255, 255, 0.5); }
+  nav ul {
+    margin: 0;
+    padding: 0; }
+  nav li {
+    width: auto;
+    list-style: none; }
+
+.scroll-hint {
+  color: #212121;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 10px 40px;
+  border: 3px #ffffff solid;
+  font-size: 13px;
+  font-weight: bold;
+  font-family: 'Roboto Condensed', Helvetica, Helvetica Neue, Arial, sans-serif;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 2; }
+
+/* =Main */
+p {
+  font-size: 16px; }
+
+.fs {
+  height: 100vh; }
+
+.slide {
+  color: #ffffff;
+  position: relative; }
+  .slide .wrapper {
+    padding-top: 30px;
+    text-align: center;
+    position: relative;
+    z-index: 2; }
+  @media only screen and (min-width: 320px) {
+    .slide .wrapper {
+      text-align: left; } }
+  .slide#slide1 .wrapper {
+    position: absolute;
+    bottom: 2%; }
+  .slide#slide2 .wrapper {
+    position: absolute;
+    bottom: 2%; }
+  .slide#slide3 .wrapper {
+    position: absolute;
+    bottom: 2%; }
+  .slide#slide4 .wrapper {
+    position: absolute;
+    bottom: 2%; }
+  .slide#slide5 .wrapper {
+    position: absolute;
+    bottom: 2%; }
+  .slide#slide6 .wrapper {
+    position: absolute;
+    bottom: 2%; }
+  .slide#slide7 .wrapper {
+    position: absolute;
+    bottom: 2%; }
+  .slide#slide8 .wrapper {
+    position: absolute;
+    bottom: 2%; }
+  .slide#slide9 .wrapper {
+    position: absolute;
+    bottom: 2%; }
+  .slide#slide10 .wrapper {
+    position: absolute;
+    bottom: 2%; }
+  .slide#slide11 .wrapper {
+    position: absolute;
+    bottom: 2%; }
+  .slide#slide12 .wrapper {
+    position: absolute;
+    bottom: 2%; }
+  .slide#slide13 .wrapper {
+    position: absolute;
+    bottom: 2%; }
+  .slide#slide14 .wrapper {
+    position: absolute;
+    bottom: 2%; }
+  .slide#slide15 .wrapper {
+    position: absolute;
+    bottom: 2%; }
+  .slide#slide16 .wrapper {
+    position: absolute;
+    bottom: 2%; }
+  .slide#slide17 .wrapper {
+    position: absolute;
+    bottom: 2%; }
+  .slide#slide18 .wrapper {
+    position: absolute;
+    bottom: 2%; }
+  .slide#slide19 .wrapper {
+    position: absolute;
+    bottom: 2%; }
+  .slide#slide20 .wrapper {
+    position: absolute;
+    bottom: 2%; }
+  .slide#slide21 .wrapper {
+    position: absolute;
+    bottom: 2%; }
+  .slide#slide22 .wrapper {
+    position: absolute;
+    bottom: 2%; }
+  .slide#slide23 .wrapper {
+    position: absolute;
+    bottom: 2%; }
+  .slide#slide24 .wrapper {
+    position: absolute;
+    bottom: 2%; }
+  .slide#slide25 .wrapper {
+    position: absolute;
+    bottom: 2%; }
+  .slide#slide26 .wrapper {
+    position: absolute;
+    bottom: 2%; }
+  .slide#slide27 .wrapper {
+    position: absolute;
+    bottom: 2%; }
+  .slide#slide28 .wrapper {
+    position: absolute;
+    bottom: 2%; }
+  .slide#slide29 .wrapper {
+    position: absolute;
+    bottom: 2%; }
+  .slide#slide30 .wrapper {
+    position: absolute;
+    bottom: 2%; }
+  .slide#slide31 .wrapper {
+    position: absolute;
+    bottom: 2%; }
+  .slide#slide32 .wrapper {
+    position: absolute;
+    bottom: 2%; }
+  .slide#slide33 .wrapper {
+    position: absolute;
+    bottom: 2%; }
+  .slide#slide34 .wrapper {
+    position: absolute;
+    bottom: 2%; }
+  .slide#slide35 .wrapper {
+    position: absolute;
+    bottom: 2%; }
+  .slide#slide36 .wrapper {
+    position: absolute;
+    bottom: 2%; }
+  .slide#slide36 .button {
+    border-color: #ffffff;
+    color: #212121;
+    background-color: rgba(255, 255, 255, 0.9); }
+    .slide#slide36 .button:hover {
+      border-color: #212121;
+      background-color: #212121;
+      color: #ffffff; }
+  .slide#slide36 .wrapper {
+    padding-top: 100px; }
+
+.button {
+  text-decoration: none;
+  color: #ffffff;
+  border: 1px rgba(255, 255, 255, 0.7) solid;
+  padding: 8px 15px;
+  margin-top: 15px;
+  display: inline-block;
+  position: relative; }
+  .button:hover {
+    border-color: #ffffff;
+    background-color: #ffffff;
+    color: #000000; }
+
+/* =Content Block */
+.content-block {
+  background-color: #212121;
+  color: rgba(255, 255, 255, 0.9); }
+  .content-block .wrapper {
+    padding: 30px 0;
+    text-align: center; }
+  .no-touch .content-block .wrapper {
+    visibility: hidden;
+    opacity: 0; }
+  .no-touch .content-block.is-active .wrapper {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+
+/* =Footer */
+.footer-container {
+  text-align: center;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: #06060d; }
+  .footer-container img {
+    margin-top: -30px;
+    z-index: 2;
+    position: relative; }
+  .footer-container h2, .footer-container h3 {
+    color: #fff; }
+  .footer-container h3 a {
+    text-decoration: none;
+    color: #fff; }
+  .footer-container h3 {
+    margin: 0;
+    padding: 20px 0;
+    font-weight: normal; }
+  .footer-container a {
+    color: rgba(255, 255, 255, 0.5); }
+  .footer-container .top-btn {
+    text-align: left; }
+    .footer-container .top-btn a {
+      background-color: #212121;
+      padding: 4px 8px; }
+  .footer-container p {
+    font-size: 1em; }
+  .footer-container .button:hover {
+    background-color: #fff; }
+
+/* =Simple animation up */
+.no-touch .slideInUp {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.7s ease-out;
+          transition: all 0.7s ease-out;
+  -webkit-transform: translate3d(0, 50px, 0);
+  transform: translate3d(0, 50px, 0); }
+.no-touch .is-active .slideInUp {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+.slideInUp.slideInUp2 {
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s; }
+.slideInUp.slideInUp3 {
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s; }
+
+#iht_logo {
+  width: 100px;
+  margin-bottom: 30px; }
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+@media only screen and (min-width: 768px) {
+  body {
+    font-weight: 100; }
+  h1 {
+    font-size: 3em; }
+  p {
+    font-size: 20px; }
+  /* =Header */
+  .header-container {
+    overflow: hidden;
+    position: relative; }
+    .header-container .wrapper {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -120%);
+              transform: translate(-50%, -120%);
+      margin: 0;
+      padding: 0; }
+    .header-container:before {
+      font-size: 70em; }
+  .home-control {
+    z-index: 1;
+    position: absolute;
+    top: 90%;
+    left: 86%; }
+  .scroll-hint {
+    font-size: 20px; }
+  .bcg {
+    opacity: 1; }
+  .slide {
+    overflow: hidden;
+    overflow-x: hidden; }
+    .slide h1 {
+      font-size: 1.8em;
+      font-weight: 100; }
+    .slide .wrapper {
+      padding-top: 120px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      text-align: left;
+      width: 100%;
+      margin: 0; }
+      .slide .wrapper span.size {
+        display: none; }
+    .slide#slide1 {
+      color: #ffffff; }
+      .slide#slide1 .wrapper {
+        top: auto;
+        bottom: 0;
+        text-align: left;
+        width: 100%;
+        padding: 10px;
+        padding-left: 9%;
+        padding-bottom: 2%; }
+      .slide#slide1 .wp-active {
+        background: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* For Safari 5.1 to 6.0 */
+        /* For Opera 11.1 to 12.0 */
+        /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* Standard syntax (must be last) */ }
+      .slide#slide1 h2 {
+        float: left;
+        margin: 0;
+        border-right: 2px solid #fff;
+        padding-right: 20px;
+        font-size: 4em;
+        margin-right: 29px;
+        margin-top: 11px; }
+      .slide#slide1 section {
+        margin: 0; }
+        .slide#slide1 section p {
+          margin-top: -6px;
+          font-size: 1.1em; }
+          .slide#slide1 section p .fa {
+            text-align: right;
+            width: 76%;
+            margin-top: -40px;
+            position: absolute; }
+    .slide#slide2 {
+      color: #ffffff; }
+      .slide#slide2 .wrapper {
+        top: auto;
+        bottom: 0;
+        text-align: left;
+        width: 100%;
+        padding: 10px;
+        padding-left: 9%;
+        padding-bottom: 2%; }
+      .slide#slide2 .wp-active {
+        background: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* For Safari 5.1 to 6.0 */
+        /* For Opera 11.1 to 12.0 */
+        /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* Standard syntax (must be last) */ }
+      .slide#slide2 h2 {
+        float: left;
+        margin: 0;
+        border-right: 2px solid #fff;
+        padding-right: 20px;
+        font-size: 4em;
+        margin-right: 29px;
+        margin-top: 11px; }
+      .slide#slide2 section {
+        margin: 0; }
+        .slide#slide2 section p {
+          margin-top: -6px;
+          font-size: 1.1em; }
+          .slide#slide2 section p .fa {
+            text-align: right;
+            width: 76%;
+            margin-top: -40px;
+            position: absolute; }
+    .slide#slide2 .wrapper {
+      top: auto;
+      bottom: 0;
+      left: 0;
+      text-align: left;
+      -webkit-transform: translate(0);
+              transform: translate(0);
+      padding: 10px;
+      padding-left: 4%;
+      padding-bottom: 2%; }
+    .slide#slide2 section {
+      margin: 0; }
+      .slide#slide2 section p .fa {
+        width: 80%; }
+    .slide#slide3 {
+      color: #ffffff; }
+      .slide#slide3 .wrapper {
+        top: auto;
+        bottom: 0;
+        text-align: left;
+        width: 100%;
+        padding: 10px;
+        padding-left: 9%;
+        padding-bottom: 2%; }
+      .slide#slide3 .wp-active {
+        background: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* For Safari 5.1 to 6.0 */
+        /* For Opera 11.1 to 12.0 */
+        /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* Standard syntax (must be last) */ }
+      .slide#slide3 h2 {
+        float: left;
+        margin: 0;
+        border-right: 2px solid #fff;
+        padding-right: 20px;
+        font-size: 4em;
+        margin-right: 29px;
+        margin-top: 11px; }
+      .slide#slide3 section {
+        margin: 0; }
+        .slide#slide3 section p {
+          margin-top: -6px;
+          font-size: 1.1em; }
+          .slide#slide3 section p .fa {
+            text-align: right;
+            width: 76%;
+            margin-top: -40px;
+            position: absolute; }
+    .slide#slide4 {
+      color: #ffffff; }
+      .slide#slide4 .wrapper {
+        top: auto;
+        bottom: 0;
+        text-align: left;
+        width: 100%;
+        padding: 10px;
+        padding-left: 9%;
+        padding-bottom: 2%; }
+      .slide#slide4 .wp-active {
+        background: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* For Safari 5.1 to 6.0 */
+        /* For Opera 11.1 to 12.0 */
+        /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* Standard syntax (must be last) */ }
+      .slide#slide4 h2 {
+        float: left;
+        margin: 0;
+        border-right: 2px solid #fff;
+        padding-right: 20px;
+        font-size: 4em;
+        margin-right: 29px;
+        margin-top: 11px; }
+      .slide#slide4 section {
+        margin: 0; }
+        .slide#slide4 section p {
+          margin-top: -6px;
+          font-size: 1.1em; }
+          .slide#slide4 section p .fa {
+            text-align: right;
+            width: 76%;
+            margin-top: -40px;
+            position: absolute; }
+    .slide#slide4 .wrapper {
+      top: auto;
+      bottom: 0;
+      left: 0;
+      text-align: left;
+      -webkit-transform: translate(0);
+              transform: translate(0);
+      padding: 10px;
+      padding-left: 4%;
+      padding-bottom: 2%; }
+    .slide#slide4 section {
+      margin: 0; }
+      .slide#slide4 section p .fa {
+        width: 80%; }
+    .slide#slide5 {
+      color: #ffffff; }
+      .slide#slide5 .wrapper {
+        top: auto;
+        bottom: 0;
+        text-align: left;
+        width: 100%;
+        padding: 10px;
+        padding-left: 9%;
+        padding-bottom: 2%; }
+      .slide#slide5 .wp-active {
+        background: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* For Safari 5.1 to 6.0 */
+        /* For Opera 11.1 to 12.0 */
+        /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* Standard syntax (must be last) */ }
+      .slide#slide5 h2 {
+        float: left;
+        margin: 0;
+        border-right: 2px solid #fff;
+        padding-right: 20px;
+        font-size: 4em;
+        margin-right: 29px;
+        margin-top: 11px; }
+      .slide#slide5 section {
+        margin: 0; }
+        .slide#slide5 section p {
+          margin-top: -6px;
+          font-size: 1.1em; }
+          .slide#slide5 section p .fa {
+            text-align: right;
+            width: 76%;
+            margin-top: -40px;
+            position: absolute; }
+    .slide#slide6 {
+      color: #ffffff; }
+      .slide#slide6 .wrapper {
+        top: auto;
+        bottom: 0;
+        text-align: left;
+        width: 100%;
+        padding: 10px;
+        padding-left: 9%;
+        padding-bottom: 2%; }
+      .slide#slide6 .wp-active {
+        background: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* For Safari 5.1 to 6.0 */
+        /* For Opera 11.1 to 12.0 */
+        /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* Standard syntax (must be last) */ }
+      .slide#slide6 h2 {
+        float: left;
+        margin: 0;
+        border-right: 2px solid #fff;
+        padding-right: 20px;
+        font-size: 4em;
+        margin-right: 29px;
+        margin-top: 11px; }
+      .slide#slide6 section {
+        margin: 0; }
+        .slide#slide6 section p {
+          margin-top: -6px;
+          font-size: 1.1em; }
+          .slide#slide6 section p .fa {
+            text-align: right;
+            width: 76%;
+            margin-top: -40px;
+            position: absolute; }
+    .slide#slide6 .wrapper {
+      top: auto;
+      bottom: 0;
+      left: 0;
+      text-align: left;
+      -webkit-transform: translate(0);
+              transform: translate(0);
+      padding: 10px;
+      padding-left: 4%;
+      padding-bottom: 2%; }
+    .slide#slide6 section {
+      margin: 0; }
+      .slide#slide6 section p .fa {
+        width: 80%; }
+    .slide#slide7 {
+      color: #ffffff; }
+      .slide#slide7 .wrapper {
+        top: auto;
+        bottom: 0;
+        text-align: left;
+        width: 100%;
+        padding: 10px;
+        padding-left: 9%;
+        padding-bottom: 2%; }
+      .slide#slide7 .wp-active {
+        background: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* For Safari 5.1 to 6.0 */
+        /* For Opera 11.1 to 12.0 */
+        /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* Standard syntax (must be last) */ }
+      .slide#slide7 h2 {
+        float: left;
+        margin: 0;
+        border-right: 2px solid #fff;
+        padding-right: 20px;
+        font-size: 4em;
+        margin-right: 29px;
+        margin-top: 11px; }
+      .slide#slide7 section {
+        margin: 0; }
+        .slide#slide7 section p {
+          margin-top: -6px;
+          font-size: 1.1em; }
+          .slide#slide7 section p .fa {
+            text-align: right;
+            width: 76%;
+            margin-top: -40px;
+            position: absolute; }
+    .slide#slide8 {
+      color: #ffffff; }
+      .slide#slide8 .wrapper {
+        top: auto;
+        bottom: 0;
+        text-align: left;
+        width: 100%;
+        padding: 10px;
+        padding-left: 9%;
+        padding-bottom: 2%; }
+      .slide#slide8 .wp-active {
+        background: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* For Safari 5.1 to 6.0 */
+        /* For Opera 11.1 to 12.0 */
+        /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* Standard syntax (must be last) */ }
+      .slide#slide8 h2 {
+        float: left;
+        margin: 0;
+        border-right: 2px solid #fff;
+        padding-right: 20px;
+        font-size: 4em;
+        margin-right: 29px;
+        margin-top: 11px; }
+      .slide#slide8 section {
+        margin: 0; }
+        .slide#slide8 section p {
+          margin-top: -6px;
+          font-size: 1.1em; }
+          .slide#slide8 section p .fa {
+            text-align: right;
+            width: 76%;
+            margin-top: -40px;
+            position: absolute; }
+    .slide#slide8 .wrapper {
+      top: auto;
+      bottom: 0;
+      left: 0;
+      text-align: left;
+      -webkit-transform: translate(0);
+              transform: translate(0);
+      padding: 10px;
+      padding-left: 4%;
+      padding-bottom: 2%; }
+    .slide#slide8 section {
+      margin: 0; }
+      .slide#slide8 section p .fa {
+        width: 80%; }
+    .slide#slide9 {
+      color: #ffffff; }
+      .slide#slide9 .wrapper {
+        top: auto;
+        bottom: 0;
+        text-align: left;
+        width: 100%;
+        padding: 10px;
+        padding-left: 9%;
+        padding-bottom: 2%; }
+      .slide#slide9 .wp-active {
+        background: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* For Safari 5.1 to 6.0 */
+        /* For Opera 11.1 to 12.0 */
+        /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* Standard syntax (must be last) */ }
+      .slide#slide9 h2 {
+        float: left;
+        margin: 0;
+        border-right: 2px solid #fff;
+        padding-right: 20px;
+        font-size: 4em;
+        margin-right: 29px;
+        margin-top: 11px; }
+      .slide#slide9 section {
+        margin: 0; }
+        .slide#slide9 section p {
+          margin-top: -6px;
+          font-size: 1.1em; }
+          .slide#slide9 section p .fa {
+            text-align: right;
+            width: 76%;
+            margin-top: -40px;
+            position: absolute; }
+    .slide#slide10 {
+      color: #ffffff; }
+      .slide#slide10 .wrapper {
+        top: auto;
+        bottom: 0;
+        text-align: left;
+        width: 100%;
+        padding: 10px;
+        padding-left: 9%;
+        padding-bottom: 2%; }
+      .slide#slide10 .wp-active {
+        background: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* For Safari 5.1 to 6.0 */
+        /* For Opera 11.1 to 12.0 */
+        /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* Standard syntax (must be last) */ }
+      .slide#slide10 h2 {
+        float: left;
+        margin: 0;
+        border-right: 2px solid #fff;
+        padding-right: 20px;
+        font-size: 4em;
+        margin-right: 29px;
+        margin-top: 11px; }
+      .slide#slide10 section {
+        margin: 0; }
+        .slide#slide10 section p {
+          margin-top: -6px;
+          font-size: 1.1em; }
+          .slide#slide10 section p .fa {
+            text-align: right;
+            width: 76%;
+            margin-top: -40px;
+            position: absolute; }
+    .slide#slide10 .wrapper {
+      top: auto;
+      bottom: 0;
+      left: 0;
+      text-align: left;
+      -webkit-transform: translate(0);
+              transform: translate(0);
+      padding: 10px;
+      padding-left: 4%;
+      padding-bottom: 2%; }
+    .slide#slide10 section {
+      margin: 0; }
+      .slide#slide10 section p .fa {
+        width: 80%; }
+    .slide#slide11 {
+      color: #ffffff; }
+      .slide#slide11 .wrapper {
+        top: auto;
+        bottom: 0;
+        text-align: left;
+        width: 100%;
+        padding: 10px;
+        padding-left: 9%;
+        padding-bottom: 2%; }
+      .slide#slide11 .wp-active {
+        background: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* For Safari 5.1 to 6.0 */
+        /* For Opera 11.1 to 12.0 */
+        /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* Standard syntax (must be last) */ }
+      .slide#slide11 h2 {
+        float: left;
+        margin: 0;
+        border-right: 2px solid #fff;
+        padding-right: 20px;
+        font-size: 4em;
+        margin-right: 29px;
+        margin-top: 11px; }
+      .slide#slide11 section {
+        margin: 0; }
+        .slide#slide11 section p {
+          margin-top: -6px;
+          font-size: 1.1em; }
+          .slide#slide11 section p .fa {
+            text-align: right;
+            width: 76%;
+            margin-top: -40px;
+            position: absolute; }
+    .slide#slide12 {
+      color: #ffffff; }
+      .slide#slide12 .wrapper {
+        top: auto;
+        bottom: 0;
+        text-align: left;
+        width: 100%;
+        padding: 10px;
+        padding-left: 9%;
+        padding-bottom: 2%; }
+      .slide#slide12 .wp-active {
+        background: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* For Safari 5.1 to 6.0 */
+        /* For Opera 11.1 to 12.0 */
+        /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* Standard syntax (must be last) */ }
+      .slide#slide12 h2 {
+        float: left;
+        margin: 0;
+        border-right: 2px solid #fff;
+        padding-right: 20px;
+        font-size: 4em;
+        margin-right: 29px;
+        margin-top: 11px; }
+      .slide#slide12 section {
+        margin: 0; }
+        .slide#slide12 section p {
+          margin-top: -6px;
+          font-size: 1.1em; }
+          .slide#slide12 section p .fa {
+            text-align: right;
+            width: 76%;
+            margin-top: -40px;
+            position: absolute; }
+    .slide#slide12 .wrapper {
+      top: auto;
+      bottom: 0;
+      left: 0;
+      text-align: left;
+      -webkit-transform: translate(0);
+              transform: translate(0);
+      padding: 10px;
+      padding-left: 4%;
+      padding-bottom: 2%; }
+    .slide#slide12 section {
+      margin: 0; }
+      .slide#slide12 section p .fa {
+        width: 80%; }
+    .slide#slide13 {
+      color: #ffffff; }
+      .slide#slide13 .wrapper {
+        top: auto;
+        bottom: 0;
+        text-align: left;
+        width: 100%;
+        padding: 10px;
+        padding-left: 9%;
+        padding-bottom: 2%; }
+      .slide#slide13 .wp-active {
+        background: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* For Safari 5.1 to 6.0 */
+        /* For Opera 11.1 to 12.0 */
+        /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* Standard syntax (must be last) */ }
+      .slide#slide13 h2 {
+        float: left;
+        margin: 0;
+        border-right: 2px solid #fff;
+        padding-right: 20px;
+        font-size: 4em;
+        margin-right: 29px;
+        margin-top: 11px; }
+      .slide#slide13 section {
+        margin: 0; }
+        .slide#slide13 section p {
+          margin-top: -6px;
+          font-size: 1.1em; }
+          .slide#slide13 section p .fa {
+            text-align: right;
+            width: 76%;
+            margin-top: -40px;
+            position: absolute; }
+    .slide#slide14 {
+      color: #ffffff; }
+      .slide#slide14 .wrapper {
+        top: auto;
+        bottom: 0;
+        text-align: left;
+        width: 100%;
+        padding: 10px;
+        padding-left: 9%;
+        padding-bottom: 2%; }
+      .slide#slide14 .wp-active {
+        background: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* For Safari 5.1 to 6.0 */
+        /* For Opera 11.1 to 12.0 */
+        /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* Standard syntax (must be last) */ }
+      .slide#slide14 h2 {
+        float: left;
+        margin: 0;
+        border-right: 2px solid #fff;
+        padding-right: 20px;
+        font-size: 4em;
+        margin-right: 29px;
+        margin-top: 11px; }
+      .slide#slide14 section {
+        margin: 0; }
+        .slide#slide14 section p {
+          margin-top: -6px;
+          font-size: 1.1em; }
+          .slide#slide14 section p .fa {
+            text-align: right;
+            width: 76%;
+            margin-top: -40px;
+            position: absolute; }
+    .slide#slide14 .wrapper {
+      top: auto;
+      bottom: 0;
+      left: 0;
+      text-align: left;
+      -webkit-transform: translate(0);
+              transform: translate(0);
+      padding: 10px;
+      padding-left: 4%;
+      padding-bottom: 2%; }
+    .slide#slide14 section {
+      margin: 0; }
+      .slide#slide14 section p .fa {
+        width: 80%; }
+    .slide#slide15 {
+      color: #ffffff; }
+      .slide#slide15 .wrapper {
+        top: auto;
+        bottom: 0;
+        text-align: left;
+        width: 100%;
+        padding: 10px;
+        padding-left: 9%;
+        padding-bottom: 2%; }
+      .slide#slide15 .wp-active {
+        background: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* For Safari 5.1 to 6.0 */
+        /* For Opera 11.1 to 12.0 */
+        /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* Standard syntax (must be last) */ }
+      .slide#slide15 h2 {
+        float: left;
+        margin: 0;
+        border-right: 2px solid #fff;
+        padding-right: 20px;
+        font-size: 4em;
+        margin-right: 29px;
+        margin-top: 11px; }
+      .slide#slide15 section {
+        margin: 0; }
+        .slide#slide15 section p {
+          margin-top: -6px;
+          font-size: 1.1em; }
+          .slide#slide15 section p .fa {
+            text-align: right;
+            width: 76%;
+            margin-top: -40px;
+            position: absolute; }
+    .slide#slide16 {
+      color: #ffffff; }
+      .slide#slide16 .wrapper {
+        top: auto;
+        bottom: 0;
+        text-align: left;
+        width: 100%;
+        padding: 10px;
+        padding-left: 9%;
+        padding-bottom: 2%; }
+      .slide#slide16 .wp-active {
+        background: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* For Safari 5.1 to 6.0 */
+        /* For Opera 11.1 to 12.0 */
+        /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* Standard syntax (must be last) */ }
+      .slide#slide16 h2 {
+        float: left;
+        margin: 0;
+        border-right: 2px solid #fff;
+        padding-right: 20px;
+        font-size: 4em;
+        margin-right: 29px;
+        margin-top: 11px; }
+      .slide#slide16 section {
+        margin: 0; }
+        .slide#slide16 section p {
+          margin-top: -6px;
+          font-size: 1.1em; }
+          .slide#slide16 section p .fa {
+            text-align: right;
+            width: 76%;
+            margin-top: -40px;
+            position: absolute; }
+    .slide#slide16 .wrapper {
+      top: auto;
+      bottom: 0;
+      left: 0;
+      text-align: left;
+      -webkit-transform: translate(0);
+              transform: translate(0);
+      padding: 10px;
+      padding-left: 4%;
+      padding-bottom: 2%; }
+    .slide#slide16 section {
+      margin: 0; }
+      .slide#slide16 section p .fa {
+        width: 80%; }
+    .slide#slide17 {
+      color: #ffffff; }
+      .slide#slide17 .wrapper {
+        top: auto;
+        bottom: 0;
+        text-align: left;
+        width: 100%;
+        padding: 10px;
+        padding-left: 9%;
+        padding-bottom: 2%; }
+      .slide#slide17 .wp-active {
+        background: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* For Safari 5.1 to 6.0 */
+        /* For Opera 11.1 to 12.0 */
+        /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* Standard syntax (must be last) */ }
+      .slide#slide17 h2 {
+        float: left;
+        margin: 0;
+        border-right: 2px solid #fff;
+        padding-right: 20px;
+        font-size: 4em;
+        margin-right: 29px;
+        margin-top: 11px; }
+      .slide#slide17 section {
+        margin: 0; }
+        .slide#slide17 section p {
+          margin-top: -6px;
+          font-size: 1.1em; }
+          .slide#slide17 section p .fa {
+            text-align: right;
+            width: 76%;
+            margin-top: -40px;
+            position: absolute; }
+    .slide#slide18 {
+      color: #ffffff; }
+      .slide#slide18 .wrapper {
+        top: auto;
+        bottom: 0;
+        text-align: left;
+        width: 100%;
+        padding: 10px;
+        padding-left: 9%;
+        padding-bottom: 2%; }
+      .slide#slide18 .wp-active {
+        background: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* For Safari 5.1 to 6.0 */
+        /* For Opera 11.1 to 12.0 */
+        /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* Standard syntax (must be last) */ }
+      .slide#slide18 h2 {
+        float: left;
+        margin: 0;
+        border-right: 2px solid #fff;
+        padding-right: 20px;
+        font-size: 4em;
+        margin-right: 29px;
+        margin-top: 11px; }
+      .slide#slide18 section {
+        margin: 0; }
+        .slide#slide18 section p {
+          margin-top: -6px;
+          font-size: 1.1em; }
+          .slide#slide18 section p .fa {
+            text-align: right;
+            width: 76%;
+            margin-top: -40px;
+            position: absolute; }
+    .slide#slide18 .wrapper {
+      top: auto;
+      bottom: 0;
+      left: 0;
+      text-align: left;
+      -webkit-transform: translate(0);
+              transform: translate(0);
+      padding: 10px;
+      padding-left: 4%;
+      padding-bottom: 2%; }
+    .slide#slide18 section {
+      margin: 0; }
+      .slide#slide18 section p .fa {
+        width: 80%; }
+    .slide#slide19 {
+      color: #ffffff; }
+      .slide#slide19 .wrapper {
+        top: auto;
+        bottom: 0;
+        text-align: left;
+        width: 100%;
+        padding: 10px;
+        padding-left: 9%;
+        padding-bottom: 2%; }
+      .slide#slide19 .wp-active {
+        background: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* For Safari 5.1 to 6.0 */
+        /* For Opera 11.1 to 12.0 */
+        /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* Standard syntax (must be last) */ }
+      .slide#slide19 h2 {
+        float: left;
+        margin: 0;
+        border-right: 2px solid #fff;
+        padding-right: 20px;
+        font-size: 4em;
+        margin-right: 29px;
+        margin-top: 11px; }
+      .slide#slide19 section {
+        margin: 0; }
+        .slide#slide19 section p {
+          margin-top: -6px;
+          font-size: 1.1em; }
+          .slide#slide19 section p .fa {
+            text-align: right;
+            width: 76%;
+            margin-top: -40px;
+            position: absolute; }
+    .slide#slide20 {
+      color: #ffffff; }
+      .slide#slide20 .wrapper {
+        top: auto;
+        bottom: 0;
+        text-align: left;
+        width: 100%;
+        padding: 10px;
+        padding-left: 9%;
+        padding-bottom: 2%; }
+      .slide#slide20 .wp-active {
+        background: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* For Safari 5.1 to 6.0 */
+        /* For Opera 11.1 to 12.0 */
+        /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* Standard syntax (must be last) */ }
+      .slide#slide20 h2 {
+        float: left;
+        margin: 0;
+        border-right: 2px solid #fff;
+        padding-right: 20px;
+        font-size: 4em;
+        margin-right: 29px;
+        margin-top: 11px; }
+      .slide#slide20 section {
+        margin: 0; }
+        .slide#slide20 section p {
+          margin-top: -6px;
+          font-size: 1.1em; }
+          .slide#slide20 section p .fa {
+            text-align: right;
+            width: 76%;
+            margin-top: -40px;
+            position: absolute; }
+    .slide#slide20 .wrapper {
+      top: auto;
+      bottom: 0;
+      left: 0;
+      text-align: left;
+      -webkit-transform: translate(0);
+              transform: translate(0);
+      padding: 10px;
+      padding-left: 4%;
+      padding-bottom: 2%; }
+    .slide#slide20 section {
+      margin: 0; }
+      .slide#slide20 section p .fa {
+        width: 80%; }
+    .slide#slide21 {
+      color: #ffffff; }
+      .slide#slide21 .wrapper {
+        top: auto;
+        bottom: 0;
+        text-align: left;
+        width: 100%;
+        padding: 10px;
+        padding-left: 9%;
+        padding-bottom: 2%; }
+      .slide#slide21 .wp-active {
+        background: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* For Safari 5.1 to 6.0 */
+        /* For Opera 11.1 to 12.0 */
+        /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* Standard syntax (must be last) */ }
+      .slide#slide21 h2 {
+        float: left;
+        margin: 0;
+        border-right: 2px solid #fff;
+        padding-right: 20px;
+        font-size: 4em;
+        margin-right: 29px;
+        margin-top: 11px; }
+      .slide#slide21 section {
+        margin: 0; }
+        .slide#slide21 section p {
+          margin-top: -6px;
+          font-size: 1.1em; }
+          .slide#slide21 section p .fa {
+            text-align: right;
+            width: 76%;
+            margin-top: -40px;
+            position: absolute; }
+    .slide#slide22 {
+      color: #ffffff; }
+      .slide#slide22 .wrapper {
+        top: auto;
+        bottom: 0;
+        text-align: left;
+        width: 100%;
+        padding: 10px;
+        padding-left: 9%;
+        padding-bottom: 2%; }
+      .slide#slide22 .wp-active {
+        background: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* For Safari 5.1 to 6.0 */
+        /* For Opera 11.1 to 12.0 */
+        /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* Standard syntax (must be last) */ }
+      .slide#slide22 h2 {
+        float: left;
+        margin: 0;
+        border-right: 2px solid #fff;
+        padding-right: 20px;
+        font-size: 4em;
+        margin-right: 29px;
+        margin-top: 11px; }
+      .slide#slide22 section {
+        margin: 0; }
+        .slide#slide22 section p {
+          margin-top: -6px;
+          font-size: 1.1em; }
+          .slide#slide22 section p .fa {
+            text-align: right;
+            width: 76%;
+            margin-top: -40px;
+            position: absolute; }
+    .slide#slide22 .wrapper {
+      top: auto;
+      bottom: 0;
+      left: 0;
+      text-align: left;
+      -webkit-transform: translate(0);
+              transform: translate(0);
+      padding: 10px;
+      padding-left: 4%;
+      padding-bottom: 2%; }
+    .slide#slide22 section {
+      margin: 0; }
+      .slide#slide22 section p .fa {
+        width: 80%; }
+    .slide#slide23 {
+      color: #ffffff; }
+      .slide#slide23 .wrapper {
+        top: auto;
+        bottom: 0;
+        text-align: left;
+        width: 100%;
+        padding: 10px;
+        padding-left: 9%;
+        padding-bottom: 2%; }
+      .slide#slide23 .wp-active {
+        background: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* For Safari 5.1 to 6.0 */
+        /* For Opera 11.1 to 12.0 */
+        /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* Standard syntax (must be last) */ }
+      .slide#slide23 h2 {
+        float: left;
+        margin: 0;
+        border-right: 2px solid #fff;
+        padding-right: 20px;
+        font-size: 4em;
+        margin-right: 29px;
+        margin-top: 11px; }
+      .slide#slide23 section {
+        margin: 0; }
+        .slide#slide23 section p {
+          margin-top: -6px;
+          font-size: 1.1em; }
+          .slide#slide23 section p .fa {
+            text-align: right;
+            width: 76%;
+            margin-top: -40px;
+            position: absolute; }
+    .slide#slide24 {
+      color: #ffffff; }
+      .slide#slide24 .wrapper {
+        top: auto;
+        bottom: 0;
+        text-align: left;
+        width: 100%;
+        padding: 10px;
+        padding-left: 9%;
+        padding-bottom: 2%; }
+      .slide#slide24 .wp-active {
+        background: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* For Safari 5.1 to 6.0 */
+        /* For Opera 11.1 to 12.0 */
+        /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* Standard syntax (must be last) */ }
+      .slide#slide24 h2 {
+        float: left;
+        margin: 0;
+        border-right: 2px solid #fff;
+        padding-right: 20px;
+        font-size: 4em;
+        margin-right: 29px;
+        margin-top: 11px; }
+      .slide#slide24 section {
+        margin: 0; }
+        .slide#slide24 section p {
+          margin-top: -6px;
+          font-size: 1.1em; }
+          .slide#slide24 section p .fa {
+            text-align: right;
+            width: 76%;
+            margin-top: -40px;
+            position: absolute; }
+    .slide#slide24 .wrapper {
+      top: auto;
+      bottom: 0;
+      left: 0;
+      text-align: left;
+      -webkit-transform: translate(0);
+              transform: translate(0);
+      padding: 10px;
+      padding-left: 4%;
+      padding-bottom: 2%; }
+    .slide#slide24 section {
+      margin: 0; }
+      .slide#slide24 section p .fa {
+        width: 80%; }
+    .slide#slide25 {
+      color: #ffffff; }
+      .slide#slide25 .wrapper {
+        top: auto;
+        bottom: 0;
+        text-align: left;
+        width: 100%;
+        padding: 10px;
+        padding-left: 9%;
+        padding-bottom: 2%; }
+      .slide#slide25 .wp-active {
+        background: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* For Safari 5.1 to 6.0 */
+        /* For Opera 11.1 to 12.0 */
+        /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* Standard syntax (must be last) */ }
+      .slide#slide25 h2 {
+        float: left;
+        margin: 0;
+        border-right: 2px solid #fff;
+        padding-right: 20px;
+        font-size: 4em;
+        margin-right: 29px;
+        margin-top: 11px; }
+      .slide#slide25 section {
+        margin: 0; }
+        .slide#slide25 section p {
+          margin-top: -6px;
+          font-size: 1.1em; }
+          .slide#slide25 section p .fa {
+            text-align: right;
+            width: 76%;
+            margin-top: -40px;
+            position: absolute; }
+    .slide#slide26 {
+      color: #ffffff; }
+      .slide#slide26 .wrapper {
+        top: auto;
+        bottom: 0;
+        text-align: left;
+        width: 100%;
+        padding: 10px;
+        padding-left: 9%;
+        padding-bottom: 2%; }
+      .slide#slide26 .wp-active {
+        background: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* For Safari 5.1 to 6.0 */
+        /* For Opera 11.1 to 12.0 */
+        /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* Standard syntax (must be last) */ }
+      .slide#slide26 h2 {
+        float: left;
+        margin: 0;
+        border-right: 2px solid #fff;
+        padding-right: 20px;
+        font-size: 4em;
+        margin-right: 29px;
+        margin-top: 11px; }
+      .slide#slide26 section {
+        margin: 0; }
+        .slide#slide26 section p {
+          margin-top: -6px;
+          font-size: 1.1em; }
+          .slide#slide26 section p .fa {
+            text-align: right;
+            width: 76%;
+            margin-top: -40px;
+            position: absolute; }
+    .slide#slide26 .wrapper {
+      top: auto;
+      bottom: 0;
+      left: 0;
+      text-align: left;
+      -webkit-transform: translate(0);
+              transform: translate(0);
+      padding: 10px;
+      padding-left: 4%;
+      padding-bottom: 2%; }
+    .slide#slide26 section {
+      margin: 0; }
+      .slide#slide26 section p .fa {
+        width: 80%; }
+    .slide#slide27 {
+      color: #ffffff; }
+      .slide#slide27 .wrapper {
+        top: auto;
+        bottom: 0;
+        text-align: left;
+        width: 100%;
+        padding: 10px;
+        padding-left: 9%;
+        padding-bottom: 2%; }
+      .slide#slide27 .wp-active {
+        background: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* For Safari 5.1 to 6.0 */
+        /* For Opera 11.1 to 12.0 */
+        /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* Standard syntax (must be last) */ }
+      .slide#slide27 h2 {
+        float: left;
+        margin: 0;
+        border-right: 2px solid #fff;
+        padding-right: 20px;
+        font-size: 4em;
+        margin-right: 29px;
+        margin-top: 11px; }
+      .slide#slide27 section {
+        margin: 0; }
+        .slide#slide27 section p {
+          margin-top: -6px;
+          font-size: 1.1em; }
+          .slide#slide27 section p .fa {
+            text-align: right;
+            width: 76%;
+            margin-top: -40px;
+            position: absolute; }
+    .slide#slide28 {
+      color: #ffffff; }
+      .slide#slide28 .wrapper {
+        top: auto;
+        bottom: 0;
+        text-align: left;
+        width: 100%;
+        padding: 10px;
+        padding-left: 9%;
+        padding-bottom: 2%; }
+      .slide#slide28 .wp-active {
+        background: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* For Safari 5.1 to 6.0 */
+        /* For Opera 11.1 to 12.0 */
+        /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* Standard syntax (must be last) */ }
+      .slide#slide28 h2 {
+        float: left;
+        margin: 0;
+        border-right: 2px solid #fff;
+        padding-right: 20px;
+        font-size: 4em;
+        margin-right: 29px;
+        margin-top: 11px; }
+      .slide#slide28 section {
+        margin: 0; }
+        .slide#slide28 section p {
+          margin-top: -6px;
+          font-size: 1.1em; }
+          .slide#slide28 section p .fa {
+            text-align: right;
+            width: 76%;
+            margin-top: -40px;
+            position: absolute; }
+    .slide#slide28 .wrapper {
+      top: auto;
+      bottom: 0;
+      left: 0;
+      text-align: left;
+      -webkit-transform: translate(0);
+              transform: translate(0);
+      padding: 10px;
+      padding-left: 4%;
+      padding-bottom: 2%; }
+    .slide#slide28 section {
+      margin: 0; }
+      .slide#slide28 section p .fa {
+        width: 80%; }
+    .slide#slide29 {
+      color: #ffffff; }
+      .slide#slide29 .wrapper {
+        top: auto;
+        bottom: 0;
+        text-align: left;
+        width: 100%;
+        padding: 10px;
+        padding-left: 9%;
+        padding-bottom: 2%; }
+      .slide#slide29 .wp-active {
+        background: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* For Safari 5.1 to 6.0 */
+        /* For Opera 11.1 to 12.0 */
+        /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* Standard syntax (must be last) */ }
+      .slide#slide29 h2 {
+        float: left;
+        margin: 0;
+        border-right: 2px solid #fff;
+        padding-right: 20px;
+        font-size: 4em;
+        margin-right: 29px;
+        margin-top: 11px; }
+      .slide#slide29 section {
+        margin: 0; }
+        .slide#slide29 section p {
+          margin-top: -6px;
+          font-size: 1.1em; }
+          .slide#slide29 section p .fa {
+            text-align: right;
+            width: 76%;
+            margin-top: -40px;
+            position: absolute; }
+    .slide#slide30 {
+      color: #ffffff; }
+      .slide#slide30 .wrapper {
+        top: auto;
+        bottom: 0;
+        text-align: left;
+        width: 100%;
+        padding: 10px;
+        padding-left: 9%;
+        padding-bottom: 2%; }
+      .slide#slide30 .wp-active {
+        background: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* For Safari 5.1 to 6.0 */
+        /* For Opera 11.1 to 12.0 */
+        /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* Standard syntax (must be last) */ }
+      .slide#slide30 h2 {
+        float: left;
+        margin: 0;
+        border-right: 2px solid #fff;
+        padding-right: 20px;
+        font-size: 4em;
+        margin-right: 29px;
+        margin-top: 11px; }
+      .slide#slide30 section {
+        margin: 0; }
+        .slide#slide30 section p {
+          margin-top: -6px;
+          font-size: 1.1em; }
+          .slide#slide30 section p .fa {
+            text-align: right;
+            width: 76%;
+            margin-top: -40px;
+            position: absolute; }
+    .slide#slide30 .wrapper {
+      top: auto;
+      bottom: 0;
+      left: 0;
+      text-align: left;
+      -webkit-transform: translate(0);
+              transform: translate(0);
+      padding: 10px;
+      padding-left: 4%;
+      padding-bottom: 2%; }
+    .slide#slide30 section {
+      margin: 0; }
+      .slide#slide30 section p .fa {
+        width: 80%; }
+    .slide#slide31 {
+      color: #ffffff; }
+      .slide#slide31 .wrapper {
+        top: auto;
+        bottom: 0;
+        text-align: left;
+        width: 100%;
+        padding: 10px;
+        padding-left: 9%;
+        padding-bottom: 2%; }
+      .slide#slide31 .wp-active {
+        background: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* For Safari 5.1 to 6.0 */
+        /* For Opera 11.1 to 12.0 */
+        /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* Standard syntax (must be last) */ }
+      .slide#slide31 h2 {
+        float: left;
+        margin: 0;
+        border-right: 2px solid #fff;
+        padding-right: 20px;
+        font-size: 4em;
+        margin-right: 29px;
+        margin-top: 11px; }
+      .slide#slide31 section {
+        margin: 0; }
+        .slide#slide31 section p {
+          margin-top: -6px;
+          font-size: 1.1em; }
+          .slide#slide31 section p .fa {
+            text-align: right;
+            width: 76%;
+            margin-top: -40px;
+            position: absolute; }
+    .slide#slide32 {
+      color: #ffffff; }
+      .slide#slide32 .wrapper {
+        top: auto;
+        bottom: 0;
+        text-align: left;
+        width: 100%;
+        padding: 10px;
+        padding-left: 9%;
+        padding-bottom: 2%; }
+      .slide#slide32 .wp-active {
+        background: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* For Safari 5.1 to 6.0 */
+        /* For Opera 11.1 to 12.0 */
+        /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* Standard syntax (must be last) */ }
+      .slide#slide32 h2 {
+        float: left;
+        margin: 0;
+        border-right: 2px solid #fff;
+        padding-right: 20px;
+        font-size: 4em;
+        margin-right: 29px;
+        margin-top: 11px; }
+      .slide#slide32 section {
+        margin: 0; }
+        .slide#slide32 section p {
+          margin-top: -6px;
+          font-size: 1.1em; }
+          .slide#slide32 section p .fa {
+            text-align: right;
+            width: 76%;
+            margin-top: -40px;
+            position: absolute; }
+    .slide#slide32 .wrapper {
+      top: auto;
+      bottom: 0;
+      left: 0;
+      text-align: left;
+      -webkit-transform: translate(0);
+              transform: translate(0);
+      padding: 10px;
+      padding-left: 4%;
+      padding-bottom: 2%; }
+    .slide#slide32 section {
+      margin: 0; }
+      .slide#slide32 section p .fa {
+        width: 80%; }
+    .slide#slide33 {
+      color: #ffffff; }
+      .slide#slide33 .wrapper {
+        top: auto;
+        bottom: 0;
+        text-align: left;
+        width: 100%;
+        padding: 10px;
+        padding-left: 9%;
+        padding-bottom: 2%; }
+      .slide#slide33 .wp-active {
+        background: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* For Safari 5.1 to 6.0 */
+        /* For Opera 11.1 to 12.0 */
+        /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* Standard syntax (must be last) */ }
+      .slide#slide33 h2 {
+        float: left;
+        margin: 0;
+        border-right: 2px solid #fff;
+        padding-right: 20px;
+        font-size: 4em;
+        margin-right: 29px;
+        margin-top: 11px; }
+      .slide#slide33 section {
+        margin: 0; }
+        .slide#slide33 section p {
+          margin-top: -6px;
+          font-size: 1.1em; }
+          .slide#slide33 section p .fa {
+            text-align: right;
+            width: 76%;
+            margin-top: -40px;
+            position: absolute; }
+    .slide#slide34 {
+      color: #ffffff; }
+      .slide#slide34 .wrapper {
+        top: auto;
+        bottom: 0;
+        text-align: left;
+        width: 100%;
+        padding: 10px;
+        padding-left: 9%;
+        padding-bottom: 2%; }
+      .slide#slide34 .wp-active {
+        background: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* For Safari 5.1 to 6.0 */
+        /* For Opera 11.1 to 12.0 */
+        /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* Standard syntax (must be last) */ }
+      .slide#slide34 h2 {
+        float: left;
+        margin: 0;
+        border-right: 2px solid #fff;
+        padding-right: 20px;
+        font-size: 4em;
+        margin-right: 29px;
+        margin-top: 11px; }
+      .slide#slide34 section {
+        margin: 0; }
+        .slide#slide34 section p {
+          margin-top: -6px;
+          font-size: 1.1em; }
+          .slide#slide34 section p .fa {
+            text-align: right;
+            width: 76%;
+            margin-top: -40px;
+            position: absolute; }
+    .slide#slide34 .wrapper {
+      top: auto;
+      bottom: 0;
+      left: 0;
+      text-align: left;
+      -webkit-transform: translate(0);
+              transform: translate(0);
+      padding: 10px;
+      padding-left: 4%;
+      padding-bottom: 2%; }
+    .slide#slide34 section {
+      margin: 0; }
+      .slide#slide34 section p .fa {
+        width: 80%; }
+    .slide#slide35 {
+      color: #ffffff; }
+      .slide#slide35 .wrapper {
+        top: auto;
+        bottom: 0;
+        text-align: left;
+        width: 100%;
+        padding: 10px;
+        padding-left: 9%;
+        padding-bottom: 2%; }
+      .slide#slide35 .wp-active {
+        background: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* For Safari 5.1 to 6.0 */
+        /* For Opera 11.1 to 12.0 */
+        /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* Standard syntax (must be last) */ }
+      .slide#slide35 h2 {
+        float: left;
+        margin: 0;
+        border-right: 2px solid #fff;
+        padding-right: 20px;
+        font-size: 4em;
+        margin-right: 29px;
+        margin-top: 11px; }
+      .slide#slide35 section {
+        margin: 0; }
+        .slide#slide35 section p {
+          margin-top: -6px;
+          font-size: 1.1em; }
+          .slide#slide35 section p .fa {
+            text-align: right;
+            width: 76%;
+            margin-top: -40px;
+            position: absolute; }
+    .slide#slide36 {
+      color: #ffffff; }
+      .slide#slide36 .wrapper {
+        top: auto;
+        bottom: 0;
+        text-align: left;
+        width: 100%;
+        padding: 10px;
+        padding-left: 9%;
+        padding-bottom: 2%; }
+      .slide#slide36 .wp-active {
+        background: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* For Safari 5.1 to 6.0 */
+        /* For Opera 11.1 to 12.0 */
+        /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        /* Standard syntax (must be last) */ }
+      .slide#slide36 h2 {
+        float: left;
+        margin: 0;
+        border-right: 2px solid #fff;
+        padding-right: 20px;
+        font-size: 4em;
+        margin-right: 29px;
+        margin-top: 11px; }
+      .slide#slide36 section {
+        margin: 0; }
+        .slide#slide36 section p {
+          margin-top: -6px;
+          font-size: 1.1em; }
+          .slide#slide36 section p .fa {
+            text-align: right;
+            width: 76%;
+            margin-top: -40px;
+            position: absolute; }
+    .slide#slide36 .wrapper {
+      top: auto;
+      bottom: 0;
+      left: 0;
+      text-align: left;
+      -webkit-transform: translate(0);
+              transform: translate(0);
+      padding: 10px;
+      padding-left: 4%;
+      padding-bottom: 2%; }
+    .slide#slide36 section {
+      margin: 0; }
+      .slide#slide36 section p .fa {
+        width: 80%; }
+    .slide .wrapper {
+      padding: 0;
+      top: 15%;
+      -webkit-transform: translate(-50%, 0);
+              transform: translate(-50%, 0); }
+    .slide section {
+      margin: 0 auto; }
+    .slide .button {
+      border-color: rgba(0, 0, 0, 0.7);
+      background-color: transparent;
+      color: #212121; }
+    .slide .bcg {
+      opacity: 1; }
+  nav {
+    display: block; }
+  .content-block .wrapper {
+    padding: 120px 0; } }
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+.hidden {
+  display: none !important;
+  visibility: hidden; }
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+.invisible {
+  visibility: hidden; }
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  *zoom: 1; }
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+@media print {
+  *, *:before, *:after {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important; }
+  a, a:visited {
+    text-decoration: underline; }
+  a[href]:after {
+    content: " (" attr(href) ")"; }
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+  a[href^="#"]:after, a[href^="javascript:"]:after {
+    content: ""; }
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+  thead {
+    display: table-header-group; }
+  tr, img {
+    page-break-inside: avoid; }
+  img {
+    max-width: 100% !important; }
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3; }
+  h2, h3 {
+    page-break-after: avoid; } }
+
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important; }
+  a, a:visited {
+    text-decoration: underline; }
+  a[href]:after {
+    content: " (" attr(href) ")"; }
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+    content: ""; }
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+  thead {
+    display: table-header-group; }
+  tr, img {
+    page-break-inside: avoid; }
+  img {
+    max-width: 100% !important; }
+  @page {
+    margin: 0.5cm; }
+
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3; }
+  h2, h3 {
+    page-break-after: avoid; } }
